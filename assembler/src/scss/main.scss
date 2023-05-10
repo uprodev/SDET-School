@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body,
+  html {
+    @apply font-ral text-black text-[14px] font-normal break-words;
+  }
+  img {
+    @apply inline-block;
+  }
+  #page {
+    @apply overflow-hidden min-h-screen;
+  }
+}
+@layer components {
+}
+
+@import "variables", "modules/fonts/raleway", "modules/header/main.scss", "modules/footer/main.scss",
+  "modules/pages/home/first_screen.scss", "modules/pages/home/contact_section.scss", "modules/pages/home/programs.scss",
+  "modules/pages/home/course.scss", "modules/pages/imprint/imprint_section.scss", "modules/pages/home/text_list.scss",
+  "modules/pages/about_us/about_us_page.scss", "modules/pages/about_us/about_us_anovamed.scss",
+  "modules/pages/about_us/about_us_director.scss", "modules/pages/privacy_policy/privacy_policy_section.scss",
+  "modules/pages/contacts/contacts_page.scss", "modules/common/main.scss", "modules/pages/404/main.scss";

@@ -1,0 +1,35 @@
+section.about_us_content {
+    padding-top: 120px;
+    padding-bottom: 30px;
+    background-image: none;
+    background-position: unset;
+    position: relative;
+    z-index: -1;
+    @media (min-width: 1024px) {
+        padding-top: 200px;
+        padding-bottom: 100px;
+        background-image: url("http://localhost:8888/anovamed/wp-content/uploads/2023/03/Vector-2-Stroke-1.svg");
+        background-repeat: no-repeat;
+    }
+    .about_us_page {
+        padding-bottom: 20px;
+        @media (min-width: 1024px) {
+            padding-bottom: 60px;
+        }
+        h1.about_us_page_title {
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 40px;
+            text-transform: uppercase;
+            color: #002b4d;
+            text-align: center;
+            @media (min-width: 1024px) {
+                font-size: 80px;
+                line-height: 94px;
+            }
+        }
+    }
+    .about_us_first_screen_img img {
+        width: 100%;
+    }
+}

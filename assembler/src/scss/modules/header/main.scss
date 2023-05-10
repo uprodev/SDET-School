@@ -1,0 +1,32 @@
+.header_wrapper {
+  display: flex;
+  align-items: center;
+  height: 95px;
+  .header_menu {
+    margin-left: auto;
+    display: none;
+    @media (min-width: 1024px) {
+      display: block;
+    }
+    .menu_nav_items {
+      display: flex;
+      gap: 64px;
+      a {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        color: #3e3e3e;
+      }
+    }
+  }
+  a.button {
+    padding: 18px 48px;
+    background: linear-gradient(90.7deg, #0b6ef3 16.3%, #2884ff 89.52%);
+    border-radius: 62px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 79px;
+  }
+}

@@ -71,4 +71,52 @@ jQuery(document).ready(function ($) {
 
     })
   });
+
+  /*slider*/
+  var swiperReviews = new Swiper(".reviews-slider", {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    pagination: {
+      el: ".reviews-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      991: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+    },
+  });
+
+  /*slider*/
+  var swiperVideo = new Swiper(".video-slider", {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    pagination: {
+      el: ".video-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      680: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+    },
+  });
 });

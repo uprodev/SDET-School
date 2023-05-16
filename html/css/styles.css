@@ -2023,6 +2023,9 @@ ul.accordion {
   .text-block .item:last-child {
     margin-bottom: 0; }
 
+.course-2item .item figure img {
+  max-height: 100%; }
+
 /*-------------------------END-PAGE-HOME--------------------------*/
 
 /*# sourceMappingURL=styles.css.map */

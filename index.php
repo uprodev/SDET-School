@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The main template file
  *
@@ -9,21 +10,15 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package anovamed
+ * @package sdet
  */
 
- get_header();
+get_header();
+?>
 
- $title = get_the_title();
- $title_length = iconv_strlen($title);
- $the_content = apply_filters('the_content', get_the_content());
- $font_size = ($title_length > 9) ? 'sm:text-base text-xs' : 'text-lg';
- ?>
-
-<main class="section-full-height md:py-60 pt-40 pb-100 default-template">
-
+<main class="">
+  <?php get_template_part('template-parts/content/content', 'none'); ?>
 </main>
 
 <?php
- get_footer();
- 
+get_footer();

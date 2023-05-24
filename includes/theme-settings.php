@@ -16,7 +16,7 @@ function sdet_setup()
         array(
             'menu-1' => esc_html__('Menu', 'sdet'),
             'menu-2' => esc_html__('Menu-Footer', 'sdet'),
-            'menu-3' => esc_html__('Menu-Footer-Services', 'sdet'),
+            'menu-3' => esc_html__('Menu-Footer-Courses', 'sdet'),
         )
     );
     /*
@@ -86,6 +86,11 @@ if ('disable_gutenberg') {
 /* Remove <p> and <br /> from Contact Form 7 */
 add_filter('wpcf7_autop_or_not', '__return_false');
 
+add_filter('wpcf7_form_elements', function ($content) {
+    $content = preg_replace('/<(span).*?class="\s*(?:.*\s)?wpcf7-form-control-wrap(?:\s[^"]+)?\s*"[^\>]*>(.*)<\/\1>/i', '\2', $content);
+
+    return $content;
+});
 // Adds SVG to the list of allowed downloads.
 add_filter('upload_mimes', 'svg_upload_allow');
 function svg_upload_allow($mimes)
@@ -121,11 +126,18 @@ function fix_svg_mime_type($data, $file, $filename, $mimes, $real_mime = '')
 remove_action('load-update-core.php', 'wp_update_plugins');
 wp_clear_scheduled_hook('wp_update_plugins');
 
-// EXCLUDE NODE MODULES ALL IN ONE WP MIGRATION
-// add_filter(
-//     'ai1wm_exclude_themes_from_export',
-//     function ($exclude_filters) {
-//         $exclude_filters[] = 'sdet/assembler/node_modules';
-//         return $exclude_filters;
-//     }
-// );
+add_filter('body_class', 'remove_body_classes');
+function remove_body_classes($classes)
+{
+    $remove_classes = ['blog', 'archive'];
+    $classes = array_diff($classes, $remove_classes);
+    return $classes;
+}
+
+add_filter('next_posts_link_attributes', 'posts_link_attributes');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes');
+
+function posts_link_attributes()
+{
+    return 'class="add-your-class-here"';
+}

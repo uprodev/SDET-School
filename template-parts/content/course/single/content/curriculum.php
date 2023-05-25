@@ -4,6 +4,8 @@ $benefits = get_sub_field('benefits');
 
 $curriculum = get_sub_field('curriculum');
 $link = get_sub_field('link');
+$title_curriculum = get_sub_field('title_curriculum');
+$text_curriculum = get_sub_field('text_curriculum');
 ?>
 <div class="bg-after">
   <div class="bg"></div>
@@ -27,7 +29,7 @@ $link = get_sub_field('link');
       </div>
     </section>
   <?php endif; ?>
-  <?php if ($curriculum) : ?>
+  <?php if ($curriculummm) : ?>
     <section class="faq-ol">
       <div class="content-width">
         <?php if ($title) : ?>
@@ -64,6 +66,18 @@ $link = get_sub_field('link');
             <a class="btn-default" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><span><?php echo esc_html($link_title); ?></span></a>
           </div>
         <?php endif; ?>
+      </div>
+    </section>
+  <?php endif; ?>
+  <?php if ($title_curriculum || $text_curriculum) : ?>
+    <section class="article article-block">
+      <div class="content-width">
+        <div class="content">
+          <h2><?php echo $title_curriculum; ?></h2>
+          <div class="">
+            <?php echo $text_curriculum; ?>
+          </div>
+        </div>
       </div>
     </section>
   <?php endif; ?>

@@ -872,6 +872,46 @@
                             ]
                         },
                         {
+                            "key": "field_646f84c076774",
+                            "label": "Title Curriculum",
+                            "name": "title_curriculum",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_646f84d676775",
+                            "label": "Text Curriculum",
+                            "name": "text_curriculum",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
                             "key": "field_645fb9f85bf30",
                             "label": "Link",
                             "name": "link",
@@ -1578,5 +1618,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1684175687
+    "modified": 1685030142
 }

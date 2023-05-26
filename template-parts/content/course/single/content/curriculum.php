@@ -73,7 +73,7 @@ $text_curriculum = get_sub_field('text_curriculum');
     <section class="article article-block">
       <div class="content-width">
         <div class="content">
-          <h2><?php echo $title_curriculum; ?></h2>
+          <h3><?php echo $title_curriculum; ?></h3>
           <div class="">
             <?php echo $text_curriculum; ?>
           </div>

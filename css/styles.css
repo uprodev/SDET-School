@@ -968,6 +968,7 @@ header .sticky-wrapper {
     width: 53%; }
     .course-head figure img {
       position: relative;
+      height: auto;
       left: -25px; }
 
 .btn-border {
@@ -2022,6 +2023,27 @@ ul.accordion {
   .text-block .item:last-child {
     margin-bottom: 0; }
 
+
+  .article-block .content{
+    width: 100%!important;
+  }
+.article-block{
+  position: relative;
+  z-index: 1;
+}
+
+.article-block h3{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #151618;
+  margin: 0 0 15px;
+}
+
+.article-block p{
+  margin-bottom: 20px;
+}
 /*-------------------------END-PAGE-HOME--------------------------*/
 
 /*# sourceMappingURL=styles.css.map */

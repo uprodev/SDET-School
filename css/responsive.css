@@ -1563,7 +1563,9 @@
 
   .text-block .item {
     margin-bottom: 40px; }
-
+  .article-block h3{
+    font-size: 28px;
+  }
   .home-head {
     overflow: hidden; } }
 

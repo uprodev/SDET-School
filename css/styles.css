@@ -228,6 +228,7 @@ header {
   font-weight: 600;
   font-size: 18px !important;
   color: #fff;
+  white-space: nowrap;
   overflow: hidden;
   position: relative;
   text-align: center; }
@@ -1279,8 +1280,8 @@ header .sticky-wrapper {
   .founder .btn-wrap {
     margin-top: 30px;
     text-align: center; }
-    .founder .btn-wrap a {
-      width: 175px; }
+/*    .founder .btn-wrap a {
+      width: 175px; }*/
 
 .number-block-4n {
   padding: 98px 0 50px; }
@@ -2043,6 +2044,51 @@ ul.accordion {
 
 .article-block p{
   margin-bottom: 20px;
+}
+header ul li{
+  position: relative;
+}
+header ul li>ul{
+  position: absolute;
+  top: 100%;
+  left: -30px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px 30px;
+  transform: scale(0);
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  display: block!important;
+}
+header ul li>ul li{
+  margin: 0!important;
+}
+header ul li:hover ul{
+  transform: scale(1);
+}
+
+header ul li>ul li a{
+  font-size: 16px;
+  line-height: 34px;
+  display: inline-block;
+  white-space: nowrap;
+}
+.article ul{
+  margin-bottom: 30px;
+}
+.article ul li{
+  position: relative;
+  padding-left: 15px;
+}
+.article ul li:before{
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  content: '';
+  background: #000;
 }
 /*-------------------------END-PAGE-HOME--------------------------*/
 

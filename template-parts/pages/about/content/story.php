@@ -3,7 +3,7 @@ $title = get_sub_field('title');
 $text = get_sub_field('text');
 $image = get_sub_field('image');
 ?>
-<section class="story">
+<section class="story" id="story">
   <div class="bg">
     <img src="<?php echo get_template_directory_uri() . '/img/bg-4-1.png' ?>" alt="<?php echo $title; ?>" class="img-desc" />
     <img src="<?php echo get_template_directory_uri() . '/img/bg-4-2.png' ?>" alt="<?php echo $title; ?>" class="img-tab" />

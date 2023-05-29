@@ -953,7 +953,18 @@
       .text-block .item figure img {
         width: 210px;
         margin: auto; }
-
+  .sub-menu{
+    /*display: none;*/
+  }
+  .sub-menu li a{
+    font-size: 16px!important;
+  }
+  .sub-menu li:first-child{
+    margin-top: 20px;
+  }
+  .sub-menu li:last-child{
+    margin-bottom: 20px;
+  }
   .text-block .item .text {
     width: 100%; } }
 @media (max-width: 479px) {

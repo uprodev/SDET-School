@@ -13,7 +13,7 @@ $text = get_the_content();
         <?php the_post_thumbnail($id); ?>
       </figure>
       <?php if ($text) : ?>
-        <?php echo $text; ?>
+        <?php the_content(); ?>
       <?php endif; ?>
     </div>
   </div>

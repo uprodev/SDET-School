@@ -1577,6 +1577,13 @@
   .article-block h3{
     font-size: 28px;
   }
+  .book-popup {
+    width: 300px;
+  }
+  .book-popup textarea{
+    font-size: 14px;
+  }
+
   .home-head {
     overflow: hidden; } }
 

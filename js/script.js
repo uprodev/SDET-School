@@ -30,8 +30,13 @@ jQuery(document).ready(function ($) {
 
   });
 
+  $(".fancybox").fancybox({
+    touch:false,
+    autoFocus:false,
+  });
+
   /* form label*/
-  $('.input-wrap input, .input-wrap-text textarea').change(function(){
+  $('.input-wrap input, .input-wrap textarea').change(function(){
     myInput = $(this);
     tmpval = $(this).val();
     if(tmpval == '') {
@@ -40,7 +45,7 @@ jQuery(document).ready(function ($) {
       $(myInput).siblings('label').addClass('is-active');
     }
   });
-  $('.input-wrap input, .input-wrap-text textarea').focus(function (e) {
+  $('.input-wrap input, .input-wrap textarea').focus(function (e) {
     $(this).siblings('label').addClass('is-focus')
   });
   $('.input-wrap input, .input-wrap-text textarea').blur(function (e) {

@@ -716,6 +716,20 @@
   .content-width, .number-block-top .top {
     width: 440px; }
 
+
+  .work .nav-wrap{
+    position: relative;
+    margin-bottom: 20px;
+    left: 50%;
+    margin-left: -35px;
+  }
+
+  .work .slider-wrap{
+    padding: 0;
+  }
+  .work .swiper-pagination-progressbar {
+    bottom: -28px;
+  }
   header ul {
     display: none; }
 

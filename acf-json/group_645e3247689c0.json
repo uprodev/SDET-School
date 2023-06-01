@@ -61,6 +61,26 @@
             "return_format": "array"
         },
         {
+            "key": "field_6478de443fef1",
+            "label": "Google Tags",
+            "name": "google_tags_",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 20,
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
             "key": "field_645e34ada9281",
             "label": "Footer",
             "name": "",
@@ -478,5 +498,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1683986950
+    "modified": 1685642791
 }

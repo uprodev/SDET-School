@@ -100,4 +100,17 @@ $socials = get_field('socials', 'option');
       <?php endif; ?>
     </div>
   </div>
+  <div style="display: none;" class="book-popup" id="book">
+    <div class="content-wrap">
+      <section class="register">
+        <div class="content">
+
+          <div class="form-wrap">
+            <h3><?php echo __('Book a call', 'sdet') ?></h3>
+            <?php echo do_shortcode('[contact-form-7 id="349" title="Contact Form PopUp"]'); ?>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
 </footer>

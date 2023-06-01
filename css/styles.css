@@ -947,6 +947,7 @@ header .sticky-wrapper {
         flex-wrap: wrap; }
   .course-head .left {
     width: 47%;
+    padding-bottom: 50px;
     padding-top: 30px; }
   .course-head .stars-wrap {
     margin-bottom: 20px; }
@@ -2124,6 +2125,48 @@ header ul li>ul li a{
   color: #151618;
   line-height: 1.3;
   padding: 15px 0;
+}
+
+.work .nav-wrap{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 70px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.work .nav-wrap>div{
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.work .nav-wrap>div:hover{
+  background: #052141;
+}
+.work .nav-wrap>div:hover:after{
+  color: #fff;
+}
+.work .nav-wrap>div:after{
+  font-size: 14px;
+  color: #000;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+.work .slider-wrap{
+  position: relative;
+  padding-right: 80px;
 }
 /*-------------------------END-PAGE-HOME--------------------------*/
 

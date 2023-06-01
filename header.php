@@ -19,6 +19,10 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <?php wp_head(); ?>
+    <?php
+    $tags = get_field('google_tags_', 'option');
+    if ($tags) echo $tags;
+    ?>
 </head>
 
 <body <?php body_class(); ?>>

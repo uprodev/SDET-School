@@ -60,6 +60,10 @@ jQuery(document).ready(function ($) {
       el: ".work-pagination",
       type: "progressbar",
     },
+    navigation: {
+      nextEl: ".work-next",
+      prevEl: ".work-prev",
+    },
 
   });
 

@@ -18,6 +18,11 @@ if ($logos) : ?>
           </div>
           <div class="swiper-pagination work-pagination"></div>
         </div>
+
+        <div class="nav-wrap">
+          <div class="swiper-button-next work-next"></div>
+          <div class="swiper-button-prev work-prev"></div>
+        </div>
       </div>
 
     </div>
